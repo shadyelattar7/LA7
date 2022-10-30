@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GetStartViewController" customModule="la7Gym" customModuleProvider="target">
+            <connections>
+                <outlet property="btnVisitor" destination="4Sa-HC-cZC" id="roB-kD-r1U"/>
+                <outlet property="labelLogin" destination="51w-6p-TnJ" id="EFG-Dz-TCG"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewVideo" destination="0MD-4X-bJP" id="sYZ-cD-F7d"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0MD-4X-bJP">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51w-6p-TnJ">
+                    <rect key="frame" x="20" y="801" width="374" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Sa-HC-cZC">
+                    <rect key="frame" x="20" y="735" width="374" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="eHC-mj-pXb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <state key="normal" title="Continue as a Visitor">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="visitor:" destination="-1" eventType="touchUpInside" id="wEl-Mo-92j"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="51w-6p-TnJ" secondAttribute="trailing" constant="20" id="0Wc-Or-wun"/>
+                <constraint firstItem="0MD-4X-bJP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1iz-sr-ZVO"/>
+                <constraint firstItem="51w-6p-TnJ" firstAttribute="top" secondItem="4Sa-HC-cZC" secondAttribute="bottom" constant="20" id="Bd1-jd-j1F"/>
+                <constraint firstItem="0MD-4X-bJP" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="DKw-oa-42T"/>
+                <constraint firstItem="51w-6p-TnJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="JFB-RT-t5S"/>
+                <constraint firstItem="4Sa-HC-cZC" firstAttribute="leading" secondItem="51w-6p-TnJ" secondAttribute="leading" id="PNa-KT-mwa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="51w-6p-TnJ" secondAttribute="bottom" constant="40" id="hZ2-cF-jUK"/>
+                <constraint firstItem="0MD-4X-bJP" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iPj-St-evP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0MD-4X-bJP" secondAttribute="trailing" id="oFc-1B-820"/>
+                <constraint firstItem="4Sa-HC-cZC" firstAttribute="trailing" secondItem="51w-6p-TnJ" secondAttribute="trailing" id="tnp-65-jom"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="80.357142857142847"/>
+        </view>
+    </objects>
+</document>

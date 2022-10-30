@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrainersViewController" customModule="la7Gym" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAdd" destination="wtU-lv-htp" id="Vrg-VV-yxO"/>
+                <outlet property="tableView" destination="8L2-BU-VhY" id="ytg-Ad-OJz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bee-la-t4R">
+                    <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="UNY-Y2-my7"/>
+                        <constraint firstAttribute="height" constant="50" id="nFG-v0-02l"/>
+                    </constraints>
+                    <state key="normal" image="Path 41"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="MqX-PG-MpW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preferred Trainer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tg-RU-P69">
+                    <rect key="frame" x="133.5" y="77" width="147" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8L2-BU-VhY">
+                    <rect key="frame" x="0.0" y="114" width="414" height="658"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Qer-Qk-Ie1"/>
+                        <outlet property="delegate" destination="-1" id="mh4-Cr-6gw"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wtU-lv-htp">
+                    <rect key="frame" x="20" y="792" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="ExI-23-xhk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="Add Trainers">
+                        <color key="titleColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="qKw-KH-MIu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wtU-lv-htp" firstAttribute="top" secondItem="8L2-BU-VhY" secondAttribute="bottom" constant="20" id="1G5-o6-1XH"/>
+                <constraint firstItem="Bee-la-t4R" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="6v0-kE-Wa6"/>
+                <constraint firstItem="7tg-RU-P69" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BvV-mt-ZP7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wtU-lv-htp" secondAttribute="trailing" constant="20" id="LzW-Gz-K7i"/>
+                <constraint firstItem="Bee-la-t4R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ODf-TN-GmV"/>
+                <constraint firstItem="8L2-BU-VhY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="W0s-aE-GnL"/>
+                <constraint firstItem="wtU-lv-htp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="XeW-zE-rqZ"/>
+                <constraint firstItem="7tg-RU-P69" firstAttribute="centerY" secondItem="Bee-la-t4R" secondAttribute="centerY" id="e0d-nQ-JVa"/>
+                <constraint firstItem="wtU-lv-htp" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-20" id="nOA-RJ-WTd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8L2-BU-VhY" secondAttribute="trailing" id="nUj-5y-FC6"/>
+                <constraint firstItem="8L2-BU-VhY" firstAttribute="top" secondItem="Bee-la-t4R" secondAttribute="bottom" id="zG4-O7-XHH"/>
+            </constraints>
+            <point key="canvasLocation" x="-13.043478260869566" y="46.875"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Path 41" width="9.5" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AllClassesViewController" customModule="la7Gym" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="wx2-r7-By5" id="sYa-lc-uWu"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wo1-5N-gAG">
+                    <rect key="frame" x="0.0" y="64" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="4H1-x0-2vy"/>
+                        <constraint firstAttribute="height" constant="50" id="ZW6-mA-OgT"/>
+                    </constraints>
+                    <state key="normal" image="Path 41"/>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="BWt-dc-hzz"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All Classes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1S-sa-Moe">
+                    <rect key="frame" x="159.5" y="77" width="95" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wx2-r7-By5">
+                    <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ado-rg-5l8"/>
+                        <outlet property="delegate" destination="-1" id="Chl-ak-rCi"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="wx2-r7-By5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="87M-4S-L7Q"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wx2-r7-By5" secondAttribute="trailing" id="9QH-Q9-EgD"/>
+                <constraint firstItem="wo1-5N-gAG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="S3u-Q2-yDb"/>
+                <constraint firstItem="t1S-sa-Moe" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="g4R-D1-Njg"/>
+                <constraint firstItem="t1S-sa-Moe" firstAttribute="centerY" secondItem="wo1-5N-gAG" secondAttribute="centerY" id="leI-he-fcf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wx2-r7-By5" secondAttribute="bottom" id="pdn-rb-Q1o"/>
+                <constraint firstItem="wx2-r7-By5" firstAttribute="top" secondItem="wo1-5N-gAG" secondAttribute="bottom" id="vab-SS-Rmf"/>
+                <constraint firstItem="wo1-5N-gAG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wec-gn-JY0"/>
+            </constraints>
+            <point key="canvasLocation" x="-12" y="47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Path 41" width="9.5" height="17"/>
+    </resources>
+</document>

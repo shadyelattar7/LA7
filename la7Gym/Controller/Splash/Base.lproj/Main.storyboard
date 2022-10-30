@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="phd-pn-Na6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SplashViewController" customModule="la7Gym" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1149" translatesAutoresizingMaskIntoConstraints="NO" id="ryw-sP-sui">
+                                <rect key="frame" x="46.5" y="343.5" width="321" height="309"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u62-X0-yC8">
+                                <rect key="frame" x="20" y="64" width="130" height="95.5"/>
+                                <string key="text">Get
+Ready!</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="For more Power" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5d-Tb-JBG" customClass="CustomLabel" customModule="la7Gym" customModuleProvider="target">
+                                <rect key="frame" x="20" y="167.5" width="138" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1052" translatesAutoresizingMaskIntoConstraints="NO" id="NBN-N2-IbJ">
+                                <rect key="frame" x="317" y="806" width="77" height="36"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#InhalePassion" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0px-Oo-F9m" customClass="CustomLabel" customModule="la7Gym" customModuleProvider="target">
+                                <rect key="frame" x="20" y="814.5" width="118" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exclusive for LA7 GYM members and free to use" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbA-48-K6t" customClass="CustomLabel" customModule="la7Gym" customModuleProvider="target">
+                                <rect key="frame" x="20" y="211.5" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0px-Oo-F9m" firstAttribute="leading" secondItem="c5d-Tb-JBG" secondAttribute="leading" id="8Hi-jL-qAF"/>
+                            <constraint firstItem="0px-Oo-F9m" firstAttribute="centerY" secondItem="NBN-N2-IbJ" secondAttribute="centerY" id="8Lw-RH-aNa"/>
+                            <constraint firstItem="ryw-sP-sui" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="KUi-Jb-xcB"/>
+                            <constraint firstItem="u62-X0-yC8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ko9-Rl-amv"/>
+                            <constraint firstItem="c5d-Tb-JBG" firstAttribute="leading" secondItem="u62-X0-yC8" secondAttribute="leading" id="KpK-ZX-Vez"/>
+                            <constraint firstItem="ryw-sP-sui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LzX-JT-9v5"/>
+                            <constraint firstItem="dbA-48-K6t" firstAttribute="top" secondItem="c5d-Tb-JBG" secondAttribute="bottom" constant="20" id="SAa-aY-VBt"/>
+                            <constraint firstItem="dbA-48-K6t" firstAttribute="leading" secondItem="c5d-Tb-JBG" secondAttribute="leading" id="VBA-IE-0EZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NBN-N2-IbJ" secondAttribute="trailing" constant="20" id="ham-FC-4Tg"/>
+                            <constraint firstItem="u62-X0-yC8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="oPE-MI-Sc6"/>
+                            <constraint firstItem="ryw-sP-sui" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.775362" id="pOD-m4-L5E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NBN-N2-IbJ" secondAttribute="bottom" constant="20" id="r3C-ZK-S04"/>
+                            <constraint firstItem="c5d-Tb-JBG" firstAttribute="top" secondItem="u62-X0-yC8" secondAttribute="bottom" constant="8" id="y2x-C3-Hhc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dbA-48-K6t" secondAttribute="trailing" constant="20" id="ymd-JK-zYx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uMr-6l-c8C"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="65.625"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NSF-Jh-avh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="phd-pn-Na6" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Ta-Lq-d3d">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rgb-zo-SUg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pl0-A1-LVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="65.625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 1052" width="77" height="36"/>
+        <image name="Group 1149" width="321" height="309"/>
+    </resources>
+</document>
